@@ -18,7 +18,7 @@ body, html {
 .bgimg-1 {
   background-position: center;
   background-size: cover;
-  background-image: url("");
+  background-image: url("Creating%20a%20beter.jpg");
   min-height: 100%;
 }
 
@@ -26,19 +26,9 @@ body, html {
   padding: 16px;
 }
 </style>
-       <head>
-<title>LLoyd</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<style>
-.mySlides {display:none;}
-</style>
-</head> 
 <body>
 
 <!-- Navbar (sit on top) -->
-    
 <div class="w3-top">
   <div class="w3-bar w3-white w3-card" id="myNavbar">
     <a href="#home" class="w3-bar-item w3-button w3-wide">HOME</a>
@@ -50,7 +40,7 @@ body, html {
       <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PRICING</a>
       <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
     </div>
-    <!-- Hide right-floated links on small screens and replace them with a menu icon --><!-- <img src="ML%20Cleaning%20logo.jpg" style="width:7%">-->
+    <!-- Hide right-floated links on small screens and replace them with a menu icon --> <img src="ML%20Cleaning%20logo.jpg" style="width:7%">
                                                                                         
     <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
       <i class="fa fa-bars"></i>
@@ -58,36 +48,7 @@ body, html {
   </div>
 </div>
 
-    
-<!-- This is the Automatic Slideshow-->
-    <div class="w3-content w3-section" style="max-width:500px">
-  <img class="mySlides" src="Creating%20a%20beter.jpg" style="width:100%">
-  <img class="mySlides" src="HouseKeeping.jpg" style="width:100%">
-  <img class="mySlides" src="Owner.jpg" style="width:100%">
-</div>
-
-<script>
-var myIndex = 0;
-carousel();
-
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 6000); // Change image every 2 seconds
-}
-</script>
-
-    <!-- this is end the slideshow -->
-    
-    
 <!-- Sidebar on small screens when clicking the menu icon -->
-    <!--
 <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
   <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
@@ -98,13 +59,12 @@ function carousel() {
 </nav>
 
 <!-- Header with full-height image -->
-    <!--
 <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
   <div class="w3-display-left w3-text-white" style="padding:48px">
       <!--img src="HouseKeeping.jpg" width="300">-->
   <!--  <span class="w3-jumbo w3-hide-small" style="color: black">Start something that matters</span><br>
     <span class="w3-xxlarge w3-hide-large w3-hide-medium">Start something that matters</span><br>
-    <span class="w3-large">Stop wasting valuable time with projects that just isn't you.</span>--><!--
+    <span class="w3-large">Stop wasting valuable time with projects that just isn't you.</span>-->
       <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Let's work together today</a></p>
   </div> 
@@ -121,7 +81,6 @@ function carousel() {
 </header>
 
 <!-- About Section -->
-    <!--
 <div class="w3-container" style="padding:128px 16px" id="about">
   <h3 class="w3-center">ABOUT THE COMPANY</h3>
   <p class="w3-center w3-large">Key features of our company</p>
@@ -150,7 +109,6 @@ function carousel() {
 </div>
 
 <!-- Promo Section - "We know design" -->
-    <!--
 <div class="w3-container w3-light-grey" style="padding:128px 16px">
   <div class="w3-row-padding">
     <div class="w3-col m6">
@@ -165,7 +123,6 @@ function carousel() {
 </div>
 
 <!-- Team Section -->
-    <!--
 <div class="w3-container" style="padding:128px 16px" id="team">
   <h3 class="w3-center">THE TEAM</h3>
   <p class="w3-center w3-large">The ones who runs this company</p>
@@ -218,7 +175,6 @@ function carousel() {
 </div>
 
 <!-- Promo Section "Statistics" -->
-    <!--
 <div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
   <div class="w3-quarter">
     <span class="w3-xxlarge">14+</span>
@@ -240,31 +196,37 @@ function carousel() {
 
 <!-- Work Section -->
 <div class="w3-container" style="padding:128px 16px" id="work">
-  <h3 class="w3-center">What We Do</h3>
-  <!--<p class="w3-center w3-large">What we've done for people</p>-->
+  <h3 class="w3-center">OUR WORK</h3>
+  <p class="w3-center w3-large">What we've done for people</p>
 
   <div class="w3-row-padding" style="margin-top:64px">
     <div class="w3-col l3 m6">
-      <img src="construction%20clean.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A microphone">
+      <img src="/w3images/tech_mic.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A microphone">
     </div>
     <div class="w3-col l3 m6">
-      <img src="deepcleaning.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A phone">
+      <img src="/w3images/tech_phone.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A phone">
     </div>
     <div class="w3-col l3 m6">
-      <img src="housekeeping1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A drone">
+      <img src="/w3images/tech_drone.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A drone">
     </div>
     <div class="w3-col l3 m6">
-      <img src="janitorial%20maintenance.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Soundbox">
+      <img src="/w3images/tech_sound.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Soundbox">
     </div>
   </div>
 
   <div class="w3-row-padding w3-section">
     <div class="w3-col l3 m6">
-      <img src="move%20in%20and%20out.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tablet">
+      <img src="/w3images/tech_tablet.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tablet">
     </div>
     <div class="w3-col l3 m6">
-      <img src="window%20cleaning.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A camera">
-    </div>   
+      <img src="/w3images/tech_camera.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A camera">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_typewriter.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A typewriter">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_tableturner.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tableturner">
+    </div>
   </div>
 </div>
 
@@ -278,7 +240,6 @@ function carousel() {
 </div>
 
 <!-- Skills Section -->
-    <!--
 <div class="w3-container w3-light-grey w3-padding-64">
   <div class="w3-row-padding">
     <div class="w3-col m6">
@@ -306,7 +267,6 @@ function carousel() {
 </div>
 
 <!-- Pricing Section -->
-    <!--
 <div class="w3-container w3-center w3-dark-grey" style="padding:128px 16px" id="pricing">
   <h3>PRICING</h3>
   <p class="w3-large">Choose a pricing plan that fits your needs.</p>
@@ -367,9 +327,9 @@ function carousel() {
   <h3 class="w3-center">CONTACT</h3>
   <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
   <div style="margin-top:48px">
-    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> California, US</p>
-    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: (760)793-4042</p>
-    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: moriahlloyd@gmail.com</p>
+    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Chicago, US</p>
+    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
     <br>
     <form action="/action_page.php" target="_blank">
       <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
@@ -383,18 +343,21 @@ function carousel() {
       </p>
     </form>
     <!-- Image of location/map -->
-    <div class="w3-xlarge w3-section">
-    <a href= 'https://www.facebook.com/pg/MLCleaningService/services/?ref=page_internal' class="fa fa-facebook-official w3-hover-opacity"></a>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-        
-  </div>
+    <img src="/w3images/map.jpg" class="w3-image w3-greyscale" style="width:100%;margin-top:48px">
   </div>
 </div>
 
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64">
   <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  
+  <div class="w3-xlarge w3-section">
+    <a href= 'https://www.facebook.com/pg/MLCleaningService/services/?ref=page_internal' class="fa fa-facebook-official w3-hover-opacity"></a>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
   
 </footer>
  
