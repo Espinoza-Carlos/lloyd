@@ -439,7 +439,6 @@ function w3_close() {
     // this is for the form 
     var frmvalidator = new Validator(“contactform”); frmvalidator.addValidation(“name”,”req”,”Please provide your name”); frmvalidator.addValidation(“email”,”req”,”Please provide your email”); frmvalidator.addValidation(“email”,”email”, “Please enter a valid email address”);
 </script>
-<?php
 
 $errors = ”;
 
@@ -497,6 +496,6 @@ header(‘Location: contact-form-thank-you.html’);
 
 }
 
-?>
+
 </body>
 </html>
