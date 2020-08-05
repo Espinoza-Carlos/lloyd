@@ -371,6 +371,7 @@ function carousel() {
     <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: (760)793-4042</p>
     <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: moriahlloyd@gmail.com</p>
     <br>
+      <!--
     <form action="/action_page.php" target="_blank">
       <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
       <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
@@ -382,6 +383,17 @@ function carousel() {
         </button>
       </p>
     </form>
+-->
+      <form method=”post” name=”contact_form” action=”contact-form-handler.php”> Your Name: <input type=”text” name=”name”> Email Address:
+
+<input type=”text” name=”email”> Message:
+
+<textarea name=”message”></textarea>
+
+<input type=”submit” value=”Submit”>
+
+</form>
+      
     <!-- Image of location/map -->
     <div class="w3-xlarge w3-section">
     <a href= 'https://www.facebook.com/pg/MLCleaningService/services/?ref=page_internal' class="fa fa-facebook-official w3-hover-opacity"></a>
@@ -423,7 +435,68 @@ function w3_open() {
 function w3_close() {
     mySidebar.style.display = "none";
 }
+    
+    // this is for the form 
+    var frmvalidator = new Validator(“contactform”); frmvalidator.addValidation(“name”,”req”,”Please provide your name”); frmvalidator.addValidation(“email”,”req”,”Please provide your email”); frmvalidator.addValidation(“email”,”email”, “Please enter a valid email address”);
 </script>
+<?php
 
+$errors = ”;
+
+$myemail = ‘carjun2@hotmail.com’;//<—–Put Your email address here. if(empty($_POST[‘name’]) ||
+
+empty($_POST[’email’]) ||
+
+empty($_POST[‘message’]))
+
+{
+
+$errors .= “\n Error: all fields are required”;
+
+}
+
+$name = $_POST[‘name’];
+
+$email_address = $_POST[’email’];
+
+$message = $_POST[‘message’];
+
+if (!preg_match(
+
+“/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/i”, $email_address))
+
+{
+
+$errors .= “\n Error: Invalid email address”;
+
+}
+
+if( empty($errors))
+
+{
+
+$to = $myemail;
+
+$email_subject = “Contact form submission: $name”;
+
+$email_body = “You have received a new message. “.
+
+” Here are the details:\n Name: $name \n “.
+
+“Email: $email_address\n Message \n $message”;
+
+$headers = “From: $myemail\n”;
+
+$headers .= “Reply-To: $email_address”;
+
+mail($to,$email_subject,$email_body,$headers);
+
+//redirect to the ‘thank you’ page
+
+header(‘Location: contact-form-thank-you.html’);
+
+}
+
+?>
 </body>
 </html>
