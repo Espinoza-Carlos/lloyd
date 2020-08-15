@@ -387,7 +387,7 @@ function carousel() {
       </p>
     </form>
 -->
-    form method="post" action="sendEmail.php">
+    <form method="post" action="sendEmail.php">
 	<label for="name">Name:</label>
 	<input type="text" class="text" name="cf_name" id="name" />
 	<label for="email">email:</label>
