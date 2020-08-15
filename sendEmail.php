@@ -1,46 +1,32 @@
-<?php 
-use PHPMailer\PHPMailer\PHPMailer;
+<?php
+$field_name = $_POST['cf_name'];
+$field_email = $_POST['cf_email'];
+$field_message = $_POST['cf_message'];
 
-if(isset($_POST['name']) && isset($_POST['email'])){
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $subject = $_POST['subject'];
-    $body = $_POST['body'];
+$mail_to = 'youremail@emaildomain.com';
+$subject = 'Your Subject'.$field_name;
 
-    require_once "PHPMailer/PHPMailer.php";
-    require_once "PHPMailer/SMTP.php";
-    require_once "PHPMailer/Exception.php";
+$body_message = 'From: '.$field_name."\n";
+$body_message .= 'E-mail: '.$field_email."\n";
+$body_message .= 'Message: '.$field_message;
 
-    $mail = new PHPMailer();
+$headers = 'From: '.$field_email."\r\n";
+$headers .= 'Reply-To: '.$field_email."\r\n";
 
-    //smtp settings
-    $mail->isSMTP();
-    $mail->Host = "smtp.gmail.com";
-    $mail->SMTPAuth = true;
-    $mail->Username = "carjun2@gmail.com";
-    $mail->Password = 'c@11xx16';
-    $mail->Port = 465;
-    $mail->SMTPSecure = "ssl";
+$mail_status = mail($mail_to, $subject, $body_message, $headers);
 
-    //email settings
-    $mail->isHTML(true);
-    $mail->setFrom($email, $name);
-    $mail->addAddress("carjun2@gmail.com");
-    $mail->Subject = ("$email ($subject)");
-    $mail->Body = $body;
-
-    if($mail->send()){
-        $status = "success";
-        $response = "Email is sent!";
-    }
-    else
-    {
-        $status = "failed";
-        $response = "Something is wrong: <br>" . $mail->ErrorInfo;
-    }
-
-    exit(json_encode(array("status" => $status, "response" => $response)));
+if ($mail_status) { ?>
+	<script language="javascript" type="text/javascript">
+		alert('Sucess Message');
+		window.location = 'contact.html';
+	</script>
+<?php
 }
-
+else { ?>
+	<script language="javascript" type="text/javascript">
+		alert('Error Message');
+		window.location = 'contact.html';
+	</script>
+<?php
+}
 ?>
-                           
