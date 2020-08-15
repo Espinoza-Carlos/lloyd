@@ -6,6 +6,9 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="webform.css" media="all">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>    
+    <script src="main.js"></script>    
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
@@ -384,15 +387,68 @@ function carousel() {
       </p>
     </form>
 -->
-      <form method=”post” name=”contact_form” action=”contact-form-handler.php”> Your Name: <input type=”text” name=”name”> Email Address:
+     <center>
+		<h4 class="sent-notification"></h4>
 
-<input type=”text” name=”email”> Message:
+		<form id="myForm">
+			<h2>Send an Email</h2>
 
-<textarea name=”message”></textarea>
+			<label>Name</label>
+			<input id="name" type="text" placeholder="Enter Name">
+			<br><br>
 
-<input type=”submit” value=”Submit”>
+			<label>Email</label>
+			<input id="email" type="text" placeholder="Enter Email">
+			<br><br>
 
-</form>
+			<label>Subject</label>
+			<input id="subject" type="text" placeholder=" Enter Subject"> 
+			<br><br>
+
+			<p>Message</p>
+			<textarea id="body" rows="5" placeholder="Type Message">
+            </textarea>    
+			<br><br>
+
+                <button type="button" onclick="sendEmail()" value="Send An Email">Submit</button> 
+		</form>
+	</center>
+            <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript">
+        function sendEmail() {
+            var name = $("#name");
+            var email = $("#email");
+            var subject = $("#subject");
+            var body = $("#body");
+
+            if (isNotEmpty(name) && isNotEmpty(email) && isNotEmpty(subject) && isNotEmpty(body)) {
+                $.ajax({
+                   url: 'sendEmail.php',
+                   method: 'POST',
+                   dataType: 'json',
+                   data: {
+                       name: name.val(),
+                       email: email.val(),
+                       subject: subject.val(),
+                       body: body.val()
+                   }, success: function (response) {
+                        $('#myForm')[0].reset();
+                        $('.sent-notification').text("Message Sent Successfully.");
+                   }
+                });
+            }
+        }
+
+        function isNotEmpty(caller) {
+            if (caller.val() == "") {
+                caller.css('border', '1px solid red');
+                return false;
+            } else
+                caller.css('border', '');
+
+            return true;
+        }
+    </script>
       
     <!-- Image of location/map -->
     <div class="w3-xlarge w3-section">
@@ -436,67 +492,19 @@ function w3_close() {
     mySidebar.style.display = "none";
 }
     
-    // this is for the form 
-    var frmvalidator = new Validator(“contactform”); frmvalidator.addValidation(“name”,”req”,”Please provide your name”); frmvalidator.addValidation(“email”,”req”,”Please provide your email”); frmvalidator.addValidation(“email”,”email”, “Please enter a valid email address”);
+    
 </script>
-<?php
 
-$errors = ”;
-
-$myemail = ‘carjun2@hotmail.com’;//<—–Put Your email address here. if(empty($_POST[‘name’]) ||
-
-empty($_POST[’email’]) ||
-
-empty($_POST[‘message’]))
-
-{
-
-$errors .= “\n Error: all fields are required”;
-
-}
-
-$name = $_POST[‘name’];
-
-$email_address = $_POST[’email’];
-
-$message = $_POST[‘message’];
-
-if (!preg_match(
-
-“/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/i”, $email_address))
-
-{
-
-$errors .= “\n Error: Invalid email address”;
-
-}
-
-if( empty($errors))
-
-{
-
-$to = $myemail;
-
-$email_subject = “Contact form submission: $name”;
-
-$email_body = “You have received a new message. “.
-
-” Here are the details:\n Name: $name \n “.
-
-“Email: $email_address\n Message \n $message”;
-
-$headers = “From: $myemail\n”;
-
-$headers .= “Reply-To: $email_address”;
-
-mail($to,$email_subject,$email_body,$headers);
-
-//redirect to the ‘thank you’ page
-
-header(‘Location: contact-form-thank-you.html’);
-
-}
-
-?>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 </body>
 </html>
