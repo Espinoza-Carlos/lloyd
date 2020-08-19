@@ -34,6 +34,7 @@ body, html {
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<?php include('form_process.php'); ?>
 <style>
 .mySlides {display:none;}
 </style>
@@ -387,16 +388,36 @@ function carousel() {
       </p>
     </form>
 -->
-    <form action="mailto:carjun2@hotmail.com" method="post" enctype="text/plain">
-Name:<br>
-<input type="text" name="name"><br>
-E-mail:<br>
-<input type="text" name="mail"><br>
-Comment:<br>
-<input type="text" name="comment" size="50"><br><br>
-<input type="submit" value="Send">
-<input type="reset" value="Reset">
-</form>
+      <div class= "cotainer">
+          
+    <form id="contact" action=" <?= $_SERVER['PHP_SELF']; ?> " method = "post">
+        <h3> Quick Contact</h3>
+        <h4>Contact us today, and get reply with in 24 hours!</h4>
+        <fieldset>
+            <input placeholder="Your name" type="text" tabindex="1" name="name" value="<? = $name ?> " autofocus>
+            <span class="error"><? $name_error ?></span>
+        </fieldset>
+         <fieldset>
+            <input placeholder="Your Email Address" type="text" name="email" value="<? = $email ?> " tabindex="2" >
+            <span class="error"><? $email_error ?></span>
+        </fieldset>
+         <fieldset>
+            <input placeholder="Your Phone Number" type="text" name="phone" value="<? = $phone ?> " tabindext="3" >
+            <span class="error"><? $phone_error ?></span>
+        </fieldset>
+         <fieldset>
+            <input placeholder="Your Web Site starts with Http://" type="text" name="url" value="<? = $url ?> " tabindex="4">
+            <span class="error"><? $url_error ?></span>
+        </fieldset>
+         <fieldset>
+            <input placeholder="Type your Message Here..." type="text" name="message" value="<? = $message ?> " tabindex ="5">
+            
+        </fieldset>
+        <fieldset>
+        <button name="submit" type="submit" id="contact-submit"="...Sending">Submit</button>
+        </fieldset>
+        </form>
+          </div>
       
     <!-- Image of location/map -->
     <div class="w3-xlarge w3-section">
