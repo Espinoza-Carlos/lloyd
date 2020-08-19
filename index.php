@@ -34,7 +34,7 @@ body, html {
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<?php include 'form_process.php'; ?>
+<!-- <?php include 'form_process.php'; ?> -->
 <style>
 .mySlides {display:none;}
 </style>
@@ -243,10 +243,10 @@ function carousel() {
 </div>
 
 <!-- Work Section -->
-<div class="w3-container" style="padding:128px 16px" id="work">
+<!-- <div class="w3-container" style="padding:128px 16px" id="work">
   <h3 class="w3-center">What We Do</h3>
   <!--<p class="w3-center w3-large">What we've done for people</p>-->
-
+<!--
   <div class="w3-row-padding" style="margin-top:64px">
     <div class="w3-col l3 m6">
       <img src="construction%20clean.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A microphone">
