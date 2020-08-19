@@ -367,7 +367,7 @@ function carousel() {
 </div>
 
 <!-- Contact Section -->
-    <?php include 'form_process.php'; ?> 
+    
 <div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
   <h3 class="w3-center">CONTACT</h3>
   <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
@@ -391,7 +391,7 @@ function carousel() {
 -->
       
           
-          
+    <?php include 'form_process.php'; ?>       
     <form id="contact" action=" <?= $GLOBALS['PHP_SELF']; ?> " method="post">
         <h3> Quick Contact</h3>
         <h4>Contact us today, and get reply with in 24 hours!</h4>
