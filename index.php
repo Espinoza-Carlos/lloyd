@@ -34,7 +34,7 @@ body, html {
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<?php include 'form_process.php'; ?> 
+
 <style>
 .mySlides {display:none;}
 </style>
@@ -367,6 +367,7 @@ function carousel() {
 </div>
 
 <!-- Contact Section -->
+    <?php include 'form_process.php'; ?> 
 <div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
   <h3 class="w3-center">CONTACT</h3>
   <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
