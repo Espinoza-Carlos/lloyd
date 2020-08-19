@@ -34,7 +34,6 @@ body, html {
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<!-- <?php include 'form_process.php'; ?> -->
 <style>
 .mySlides {display:none;}
 </style>
@@ -243,10 +242,10 @@ function carousel() {
 </div>
 
 <!-- Work Section -->
-<!-- <div class="w3-container" style="padding:128px 16px" id="work">
+<div class="w3-container" style="padding:128px 16px" id="work">
   <h3 class="w3-center">What We Do</h3>
   <!--<p class="w3-center w3-large">What we've done for people</p>-->
-<!--
+
   <div class="w3-row-padding" style="margin-top:64px">
     <div class="w3-col l3 m6">
       <img src="construction%20clean.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A microphone">
@@ -388,36 +387,68 @@ function carousel() {
       </p>
     </form>
 -->
-      <div class= "cotainer">
-          
-    <form id="contact" action=" <?= $_SERVER['PHP_SELF']; ?> " method = "post">
-        <h3> Quick Contact</h3>
-        <h4>Contact us today, and get reply with in 24 hours!</h4>
-        <fieldset>
-            <input placeholder="Your name" type="text" tabindex="1" name="name" value="<? = $name ?> " autofocus>
-            <span class="error"><? $name_error ?></span>
-        </fieldset>
-         <fieldset>
-            <input placeholder="Your Email Address" type="text" name="email" value="<? = $email ?> " tabindex="2" >
-            <span class="error"><? $email_error ?></span>
-        </fieldset>
-         <fieldset>
-            <input placeholder="Your Phone Number" type="text" name="phone" value="<? = $phone ?> " tabindext="3" >
-            <span class="error"><? $phone_error ?></span>
-        </fieldset>
-         <fieldset>
-            <input placeholder="Your Web Site starts with Http://" type="text" name="url" value="<? = $url ?> " tabindex="4">
-            <span class="error"><? $url_error ?></span>
-        </fieldset>
-         <fieldset>
-            <input placeholder="Type your Message Here..." type="text" name="message" value="<? = $message ?> " tabindex ="5">
-            
-        </fieldset>
-        <fieldset>
-        <button name="submit" type="submit" id="contact-submit"="...Sending">Submit</button>
-        </fieldset>
-        </form>
-          </div>
+     <center>
+		<h4 class="sent-notification"></h4>
+
+		<form id="myForm">
+			<h2>Send an Email</h2>
+
+			<label>Name</label>
+			<input id="name" type="text" placeholder="Enter Name">
+			<br><br>
+
+			<label>Email</label>
+			<input id="email" type="text" placeholder="Enter Email">
+			<br><br>
+
+			<label>Subject</label>
+			<input id="subject" type="text" placeholder=" Enter Subject"> 
+			<br><br>
+
+			<p>Message</p>
+			<textarea id="body" rows="5" placeholder="Type Message">
+            </textarea>    
+			<br><br>
+
+                <button type="button" onclick="sendEmail()" value="Send An Email">Submit</button> 
+		</form>
+	</center>
+            <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript">
+        function sendEmail() {
+            var name = $("#name");
+            var email = $("#email");
+            var subject = $("#subject");
+            var body = $("#body");
+
+            if (isNotEmpty(name) && isNotEmpty(email) && isNotEmpty(subject) && isNotEmpty(body)) {
+                $.ajax({
+                   url: 'sendEmail.php',
+                   method: 'POST',
+                   dataType: 'json',
+                   data: {
+                       name: name.val(),
+                       email: email.val(),
+                       subject: subject.val(),
+                       body: body.val()
+                   }, success: function (response) {
+                        $('#myForm')[0].reset();
+                        $('.sent-notification').text("Message Sent Successfully.");
+                   }
+                });
+            }
+        }
+
+        function isNotEmpty(caller) {
+            if (caller.val() == "") {
+                caller.css('border', '1px solid red');
+                return false;
+            } else
+                caller.css('border', '');
+
+            return true;
+        }
+    </script>
       
     <!-- Image of location/map -->
     <div class="w3-xlarge w3-section">
