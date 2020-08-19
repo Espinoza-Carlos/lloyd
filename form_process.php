@@ -5,7 +5,7 @@ $name_error = $email_error = $phone_error = $url_error = "";
 $name = $email = $phone = $message = $url = "";
 
 //form is submitted with POST method
-if($_SERVER["REQUES_METHOD"] == "POST"){
+if($GLOBALS["REQUES_METHOD"] == "POST"){
     if (empty($_POST["name"])){
         $name_error = "Name is required";
     }else{
