@@ -390,7 +390,7 @@ function carousel() {
     </form>
 -->
       
-          
+      <!--    
     <?php include 'form_process.php'; ?>       
     <form id="contact" action=" <?= $GLOBALS['PHP_SELF']; ?> " method="post">
         <h3> Quick Contact</h3>
@@ -419,7 +419,7 @@ function carousel() {
         <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
         </fieldset>
         </form>
-
+-->
     
       
     <!-- Image of location/map -->
