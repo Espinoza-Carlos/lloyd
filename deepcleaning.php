@@ -81,61 +81,21 @@ body, html {
 <br>
       <h5 class="w3-center">Every Detail Counts</h5>
       <p class="w3-large">Wheater you need your home to shine, or after expending so much effort to build or remodel your home or office, we can take it to the next level so you can move into a space that shines. </p>
-      <blockquote>
-        <blockquote>
-          <blockquote>
-            <blockquote>
-              <blockquote>
-                <blockquote>
-                  <blockquote>
-                    <blockquote>
-                      <blockquote>
-                        <blockquote>
-                          <h3 id="1789643328" data-element-type="paragraph" data-uialign="left"><strong><em>Deep Cleaning</em></strong></h3>
-                        </blockquote>
-                      </blockquote>
-                    </blockquote>
-                  </blockquote>
-                </blockquote>
-              </blockquote>
-            </blockquote>
-          </blockquote>
-        </blockquote>
-      </blockquote>
+<h3 id="1789643328" data-element-type="paragraph" data-uialign="left"><strong><em>Deep Cleaning</em></strong></h3>
       <div id="1799134103" data-uialign="left">
-        <blockquote>
-          <blockquote>
-            <blockquote>
-              <blockquote>
-                <blockquote>
-                  <blockquote>
-                    <blockquote>
-                      <blockquote>
-                        <blockquote>
-                          <ul>
-                            <li>Thoroughly scrub, dust, and vacuum surfaces including ceilings<br>
-                            </li>
-                            <li>Dust and clean the inside of all closets and cabinetry<br>
-                            </li>
-                            <li>Clean flooring surfaces, including tile,  ceramic, and wood<br>
-                            </li>
-                            <li>Scrub and sanitize bathroom floors, walls, ceilings, and fixtures<br>
-                            </li>
-                            <li>Clean all windows and interior glass<br>
-                            </li>
-                            <li>Scrub/sanitize food preparation, serving area, and equipment<br>
-                            </li>
-                            <li>Remove dust and dirt from ceiling pipes, ductwork, vents, light fixtures, and other high places</li>
-                          </ul>
-                        </blockquote>
-                      </blockquote>
-                    </blockquote>
-                  </blockquote>
-                </blockquote>
-              </blockquote>
-            </blockquote>
-          </blockquote>
-        </blockquote>
+        <p>Thoroughly scrub, dust, and vacuum surfaces including ceilings<br>
+        </p>
+        <p>Dust and clean the inside of all closets and cabinetry<br>
+        </p>
+        <p>Clean flooring surfaces, including tile,  ceramic, and wood<br>
+        </p>
+        <p>Scrub and sanitize bathroom floors, walls, ceilings, and fixtures<br>
+        </p>
+        <p>Clean all windows and interior glass<br>
+        </p>
+        <p>Scrub/sanitize food preparation, serving area, and equipment<br>
+        </p>
+        <p>Remove dust and dirt from ceiling pipes, ductwork, vents, light fixtures, and other high places</p>
       </div>
       <blockquote>
         <blockquote>
