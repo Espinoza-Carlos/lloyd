@@ -66,10 +66,15 @@ body, html {
 <div class="w3-content" style="max-width:1100px">
 
   <!-- About Section -->
-  <div class="w3-row w3-padding-64" id="about">
-    <div class="w3-col m6 w3-padding-large w3-hide-small">
-     <img src="dep Cleaning.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="1242" height="64734">
-    </div>
+  <img class="w3-image" src="dep Cleaning.jpg" alt="Hamburger Catering" width="1600" height="800">
+  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+	</div>
+	<br>
+	<br><br><br><br><br>
+	
+<!--  </div>width="1242" height="64734">-->
+    
+	
 
     <div class="w3-col m6 w3-padding-large">
       <h1 class="w3-center">Deep Cleaning</h1><br>
