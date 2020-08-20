@@ -68,7 +68,7 @@ body, html {
   <!-- About Section -->
   <img class="w3-image" src="dep Cleaning.jpg" alt="Hamburger Catering" width="1600" height="800">
   <div class="w3-display-bottomleft w3-padding-large w3-opacity">
-	</div>
+  </div>
 	<br>
 	<br><br><br><br><br>
 	
@@ -76,32 +76,91 @@ body, html {
     
 	
 
-    <div class="w3-col m6 w3-padding-large">
-      <h1 class="w3-center">Deep Cleaning</h1><br>
+    <div class="fa-address-card">
+<h1 class="w3-center"><strong>Deep Cleaning</strong></h1>
+<br>
       <h5 class="w3-center">Every Detail Counts</h5>
       <p class="w3-large">Wheater you need your home to shine, or after expending so much effort to build or remodel your home or office, we can take it to the next level so you can move into a space that shines. </p>
-      <h3 id="1789643328" data-element-type="paragraph" data-uialign="left">Deep Cleaning</h3>
+      <blockquote>
+        <blockquote>
+          <blockquote>
+            <blockquote>
+              <blockquote>
+                <blockquote>
+                  <blockquote>
+                    <blockquote>
+                      <blockquote>
+                        <blockquote>
+                          <h3 id="1789643328" data-element-type="paragraph" data-uialign="left"><strong><em>Deep Cleaning</em></strong></h3>
+                        </blockquote>
+                      </blockquote>
+                    </blockquote>
+                  </blockquote>
+                </blockquote>
+              </blockquote>
+            </blockquote>
+          </blockquote>
+        </blockquote>
+      </blockquote>
       <div id="1799134103" data-uialign="left">
-        <ul>
-          <li>Thoroughly scrub, dust, and vacuum surfaces including ceilings<br>
-          </li>
-          <li>Dust and clean the inside of all closets and cabinetry<br>
-          </li>
-          <li>Clean flooring surfaces, including tile,  ceramic, and wood<br>
-          </li>
-          <li>Scrub and sanitize bathroom floors, walls, ceilings, and fixtures<br>
-          </li>
-          <li>Clean all windows and interior glass<br>
-          </li>
-          <li>Scrub/sanitize food preparation, serving area, and equipment<br>
-          </li>
-          <li>Remove dust and dirt from ceiling pipes, ductwork, vents, light fixtures, and other high places</li>
-        </ul>
+        <blockquote>
+          <blockquote>
+            <blockquote>
+              <blockquote>
+                <blockquote>
+                  <blockquote>
+                    <blockquote>
+                      <blockquote>
+                        <blockquote>
+                          <ul>
+                            <li>Thoroughly scrub, dust, and vacuum surfaces including ceilings<br>
+                            </li>
+                            <li>Dust and clean the inside of all closets and cabinetry<br>
+                            </li>
+                            <li>Clean flooring surfaces, including tile,  ceramic, and wood<br>
+                            </li>
+                            <li>Scrub and sanitize bathroom floors, walls, ceilings, and fixtures<br>
+                            </li>
+                            <li>Clean all windows and interior glass<br>
+                            </li>
+                            <li>Scrub/sanitize food preparation, serving area, and equipment<br>
+                            </li>
+                            <li>Remove dust and dirt from ceiling pipes, ductwork, vents, light fixtures, and other high places</li>
+                          </ul>
+                        </blockquote>
+                      </blockquote>
+                    </blockquote>
+                  </blockquote>
+                </blockquote>
+              </blockquote>
+            </blockquote>
+          </blockquote>
+        </blockquote>
       </div>
-      <p class="w3-large">&nbsp;</p>
+      <blockquote>
+        <blockquote>
+          <blockquote>
+            <blockquote>
+              <blockquote>
+                <blockquote>
+                  <blockquote>
+                    <blockquote>
+                      <blockquote>
+                        <ul>
+                          <li></li>
+                        </ul>
+                      </blockquote>
+                    </blockquote>
+                  </blockquote>
+                </blockquote>
+              </blockquote>
+            </blockquote>
+          </blockquote>
+        </blockquote>
+      </blockquote>
       <p class="w3-large w3-text-grey w3-hide-medium">&nbsp;</p>
-    </div>
   </div>
+</div>
   
   <hr>
   
