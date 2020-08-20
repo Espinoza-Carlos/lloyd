@@ -67,8 +67,7 @@ body, html {
 
   <!-- About Section -->
   <img class="w3-image" src="dep Cleaning.jpg" alt="Hamburger Catering" width="1600" height="800">
-  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
-  </div>
+  
 	<br>
 	<br><br><br><br><br>
 	
