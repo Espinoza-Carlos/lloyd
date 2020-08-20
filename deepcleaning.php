@@ -68,7 +68,7 @@ body, html {
   <!-- About Section -->
   <div class="w3-row w3-padding-64" id="about">
     <div class="w3-col m6 w3-padding-large w3-hide-small">
-     <img src="dep Cleaning.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+     <img src="dep Cleaning.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="1242" height="64734">
     </div>
 
     <div class="w3-col m6 w3-padding-large">
