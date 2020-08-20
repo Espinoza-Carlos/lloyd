@@ -145,11 +145,7 @@ body, html {
                 <blockquote>
                   <blockquote>
                     <blockquote>
-                      <blockquote>
-                        <ul>
-                          <li></li>
-                        </ul>
-                      </blockquote>
+                      <blockquote>&nbsp; </blockquote>
                     </blockquote>
                   </blockquote>
                 </blockquote>

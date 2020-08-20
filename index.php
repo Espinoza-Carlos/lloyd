@@ -252,7 +252,7 @@ function carousel() {
     </div>
     <div class="w3-col l3 m6">
 		<a href="deepcleaning.php">
-      <img src="deepcleaning.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A phone"></a>
+      <img src="deepcleaning.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="deep Cleaning"></a>
     </div>
     <div class="w3-col l3 m6">
     <img src="housekeeping1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A drone"></div>
