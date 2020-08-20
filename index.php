@@ -248,7 +248,8 @@ function carousel() {
 
   <div class="w3-row-padding" style="/* [disabled]margin-top: 64px; */ width: auto; height: auto;">
     <div class="w3-col l3 m6">
-      <img src="construction%20clean.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A microphone">
+		<a href="Construction Clean.php">
+      <img src="construction%20clean.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A microphone"></a>
     </div>
     <div class="w3-col l3 m6">
 		<a href="deepcleaning.php">
