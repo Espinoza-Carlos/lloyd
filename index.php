@@ -92,7 +92,7 @@ function carousel() {
 <!-- Sidebar on small screens when clicking the menu icon -->
     <!--
 <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close Ã—</a>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
   <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
   <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
   <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
@@ -159,7 +159,7 @@ function carousel() {
     <div class="w3-col m6">
       <h3>We know design.</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>tempor incididunt ut labore et dolore.</p>
-      <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th">Â </i> View Our Works</a></p>
+      <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i> View Our Works</a></p>
     </div>
     <div class="w3-col m6">
       <img class="w3-image w3-round-large" src="Creating%20a%20beter.jpg" alt="Buildings" width="700" height="394">
@@ -246,7 +246,7 @@ function carousel() {
   <h3 class="w3-center">What We Do</h3>
   <!--<p class="w3-center w3-large">What we've done for people</p>-->
 
-  <div class="w3-row-padding" style="margin-top:64px">
+  <div class="w3-row-padding" style="/* [disabled]margin-top: 64px; */ width: auto; height: auto;">
     <div class="w3-col l3 m6">
       <img src="construction%20clean.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A microphone">
     </div>
@@ -254,26 +254,18 @@ function carousel() {
       <img src="deepcleaning.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A phone">
     </div>
     <div class="w3-col l3 m6">
-      <img src="housekeeping1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A drone">
-    </div>
-    <div class="w3-col l3 m6">
-      <img src="janitorial%20maintenance.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Soundbox">
-    </div>
-  </div>
+    <img src="housekeeping1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A drone"></div>
+  <span class="w3-row-padding" style="/* [disabled]margin-top: 64px; */ width: auto; height: auto;"><span class="w3-row-padding" style="/* [disabled]margin-top: 64px; */ width: auto; height: auto;"><span class="w3-row-padding" style="/* [disabled]margin-top: 64px; */ width: auto; height: auto;"><span class="w3-row-padding" style="/* [disabled]margin-top: 64px; */ width: auto; height: auto;"><span class="w3-col l3 m6"><img src="janitorial%20maintenance.jpg" style="width:100%" onClick="onClick(this)" class="w3-hover-opacity" alt="Soundbox"></span><span class="w3-col l3 m6"><img src="move%20in%20and%20out.jpg" style="width:100%" onClick="onClick(this)" class="w3-hover-opacity" alt="A tablet"></span><span class="w3-col l3 m6"><img src="window%20cleaning.jpg" style="width:100%" onClick="onClick(this)" class="w3-hover-opacity" alt="A camera"></span></span></span></span></span></div>
 
   <div class="w3-row-padding w3-section">
-    <div class="w3-col l3 m6">
-      <img src="move%20in%20and%20out.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tablet">
-    </div>
-    <div class="w3-col l3 m6">
-      <img src="window%20cleaning.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A camera">
-    </div>   
+    <div class="w3-col l3 m6"></div>
+    <div class="w3-col l3 m6"></div>   
   </div>
 </div>
 
 <!-- Modal for full size images on click-->
 <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">Ã—</span>
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
   <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
     <img id="img01" class="w3-image">
     <p id="caption" class="w3-opacity w3-large"></p>
