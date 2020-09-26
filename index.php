@@ -3,6 +3,7 @@
 <title>Lloyd  Template</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -21,7 +22,7 @@ body, html {
 .bgimg-1 {
   background-position: center;
   background-size: cover;
-  background-image: url("");
+  background-image: url(""); 
   min-height: 100%;
 }
 
@@ -48,9 +49,7 @@ body, html {
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
       <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
-      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
       <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORK</a>
-      <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PRICING</a>
       <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon --><!-- <img src="ML%20Cleaning%20logo.jpg" style="width:7%">-->
@@ -62,12 +61,13 @@ body, html {
 </div>
 
     
-<!-- This is the Automatic Slideshow-->
-    <div class="w3-content w3-section" style="max-width:500px">
-  <img class="mySlides" src="Creating%20a%20beter.jpg" style="width:100%">
-  <img class="mySlides" src="HouseKeeping.jpg" style="width:100%">
-  <img class="mySlides" src="Owner.jpg" style="width:100%">
-</div>
+<!-- This is Title picture-->
+    <div >
+         
+    
+  <img class="center" src="Logo.jpg" style="width:75%" >  
+
+    </div>
 
 <script>
 var myIndex = 0;
@@ -256,8 +256,15 @@ function carousel() {
       <img src="deepcleaning.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="deep Cleaning"></a>
     </div>
     <div class="w3-col l3 m6">
-    <img src="housekeeping1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A drone"></div>
-  <span class="w3-row-padding" style="/* [disabled]margin-top: 64px; */ width: auto; height: auto;"><span class="w3-row-padding" style="/* [disabled]margin-top: 64px; */ width: auto; height: auto;"><span class="w3-row-padding" style="/* [disabled]margin-top: 64px; */ width: auto; height: auto;"><span class="w3-row-padding" style="/* [disabled]margin-top: 64px; */ width: auto; height: auto;"><span class="w3-col l3 m6"><img src="janitorial%20maintenance.jpg" style="width:100%" onClick="onClick(this)" class="w3-hover-opacity" alt="Soundbox"></span><span class="w3-col l3 m6"><img src="move%20in%20and%20out.jpg" style="width:100%" onClick="onClick(this)" class="w3-hover-opacity" alt="A tablet"></span><span class="w3-col l3 m6"><img src="window%20cleaning.jpg" style="width:100%" onClick="onClick(this)" class="w3-hover-opacity" alt="A camera"></span></span></span></span></span></div>
+        <a href="houseKeeping.php">
+            <img src="housekeeping1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A drone"></a>
+            </div>
+  <span class="w3-row-padding" style="/* [disabled]margin-top: 64px; */ width: auto; height: auto;"><span class="w3-row-padding" style="/* [disabled]margin-top: 64px; */ width: auto; height: auto;"><span class="w3-row-padding" style="/* [disabled]margin-top: 64px; */ width: auto; height: auto;"><span class="w3-row-padding" style="/* [disabled]margin-top: 64px; */ width: auto; height: auto;">
+      <span class="w3-col l3 m6">
+          <a href="janitorialMaintenance.php">
+              <img src="janitorial%20maintenance.jpg" style="width:100%" onClick="onClick(this)" class="w3-hover-opacity" alt="Soundbox"></a></span><span class="w3-col l3 m6">
+      <a href="MoveInAndOut.php">
+          <img src="move%20in%20and%20out.jpg" style="width:100%" onClick="onClick(this)" class="w3-hover-opacity" alt="A tablet"></a></span><span class="w3-col l3 m6"><a href="windowCleaning.php"><img src="window%20cleaning.jpg" style="width:100%" onClick="onClick(this)" class="w3-hover-opacity" alt="A camera"></a></span></span></span></span></span></div>
 
   <div class="w3-row-padding w3-section">
     <div class="w3-col l3 m6"></div>
@@ -364,7 +371,7 @@ function carousel() {
   <h3 class="w3-center">CONTACT</h3>
   <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
   <div style="margin-top:48px">
-    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> California, US</p>
+    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Ridgecrest, CA </p>
     <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: (760)793-4042</p>
     <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: moriahlloyd@gmail.com</p>
     <br>
@@ -447,7 +454,7 @@ function carousel() {
     <!-- Image of location/map -->
     <div class="w3-xlarge w3-section">
     <a href= 'https://www.facebook.com/pg/MLCleaningService/services/?ref=page_internal' class="fa fa-facebook-official w3-hover-opacity"></a>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <a href= 'https://www.instagram.com/ml_cleaningservice/' class="fa fa-instagram w3-hover-opacity"></a>
         
   </div>
   </div>
